@@ -1,0 +1,201 @@
+GENERAL
+2FA = Two-Factor Authentication
+AAA = Authentication, Authorization, and Accounting
+ABAC = Attribute-Based Access Control
+CI = Counterintelligence
+CIA = Confidentiality, Integrity, and Availability
+CISO = Chief Information Security Officer
+CS = Computer Science
+CVE = Common Vulnerabilities and Exposures
+CVSS = Common Vulnerability Scoring System
+CWE = Common Weakness Enumeration
+IAM = Identity and Access Management
+IOC = Indicator of Compromise
+IP = Intellectual Property
+IR = Incident Response
+IT = Information Technology
+MFA = Multi-Factor Authentication
+PAM = Privileged Access Management
+PKI = Public Key Infrastructure
+RBAC = Role-Based Access Control
+RCA = Root Cause Analysis
+SLA = Service-Level Agreement
+SOC = Security Operations Center
+SSO = Single Sign-On
+
+HARDWARE
+ALU = Arithmetic Logic Unit
+ARM = Acorn/Advanced RISC Machine
+CPU = Central Processing Unit
+GPU = Graphics Processing Unit
+HDD = Hard Disk Drive
+IO = Input/Output
+ISA = Instruction Set Architecture
+NVM = Non-Volatile Memory
+NVMe = Non-Volatile Memory Express
+PCI = Peripheral Component Interconnect
+PCIe = Peripheral Component Interconnect Express
+RAM = Random Access Memory
+RISC = Reduced Instruction Set Computer
+ROM = Read-Only Memory
+SSD = Solid-State Drive
+UPS = Uninterruptible Power Supply
+
+LAYER 1 PHYSICAL
+DP = DisplayPort
+HDMI = High-Definition Multimedia Interface
+NIC = Network Interface Card
+PoE = Power over Ethernet
+SATA = Serial Advanced Technology Attachment
+STP = Shielded Twisted Pair
+USB = Universal Serial Bus
+VGA = Video Graphics Array
+
+LAYER 2 DATA LINK
+BP = Blocked Port
+BPDU = Bridge Protocol Data Unit
+CRC = Cyclic Redundancy Check
+DP = Designated Port
+FCS = Frame Check Sequence
+OUI = Organizationally Unique Identifier
+RP = Root Port
+SFD = Start Frame Delimiter
+STP = Spanning Tree Protocol
+VLAN = Virtual Local Area Network
+
+LAYER 3 NETWORK
+IP = Internet Protocol
+
+LAYER 4 TRANSPORT
+SCTP = Stream Control Transmission Protocol
+TCP = Transmission Control Protocol
+UDP = User Datagram Protocol
+
+LAYER 5 SESSION
+RPC = Remote Procedure Call
+
+LAYER 6 PRESENTATION
+TLS = Transport Layer Security
+
+LAYER 7 APPLICATION
+DHCP = Dynamic Host Configuration Protocol
+DNS = Domain Name System
+FTP = File Transfer Protocol
+HTTP = Hypertext Transfer Protocol
+HTTPS = Hypertext Transfer Protocol Secure
+IMAP = Internet Message Access Protocol
+NTP = Network Time Protocol
+RDP = Remote Desktop Protocol
+SMTP = Simple Mail Transfer Protocol
+SSH = Secure Shell
+
+NETWORKING
+ACL = Access Control List
+ARP = Address Resolution Protocol
+BGP = Border Gateway Protocol
+C2S = Client to Server
+CIDR = Classless Inter-Domain Routing
+ICMP = Internet Control Message Protocol
+LAN = Local Area Network
+MAC = Media Access Control
+MAN = Metropolitan Area Network
+MTU = Maximum Transmission Unit
+NAT = Network Address Translation
+P2P = Peer-to-Peer
+PAN = Personal Area Network
+PAT = Port Address Translation
+RIP = Routing Information Protocol
+SNMP = Simple Network Management Protocol
+VPN = Virtual Private Network
+WAN = Wide Area Network
+WLAN = Wireless Local Area Network
+
+ORGANIZATIONS AND STANDARDS
+ANSI = American National Standards Institute
+IEEE = Institute of Electrical and Electronics Engineers
+ISO = International Organization for Standardization
+NIST = National Institute of Standards and Technology
+OSI = Open Systems Interconnection
+OWASP = Open Worldwide Application Security Project
+
+SECURITY
+AES = Advanced Encryption Standard
+AITM = Adversary-In-The-Middle
+APT = Advanced Persistent Threat
+AV = Antivirus
+C&C = Command and Control
+C2 = Command and Control
+CYBINT = Cyber Intelligence
+DAST = Dynamic Application Security Testing
+DDoS = Distributed Denial-of-Service
+DES = Data Encryption Standard
+DLP = Data Loss Prevention
+DoS = Denial-of-Service
+ECC = Elliptic-Curve Cryptography
+EDR = Endpoint Detection and Response
+EPP = Endpoint Protection Platform
+FININT = Financial Intelligence
+GEOINT = Geospatial Intelligence
+HMAC = Hash-Based Message Authentication Code
+HSM = Hardware Security Module
+HUMINT = Human Intelligence
+IDS = Intrusion Detection System
+IMINT = Imagery Intelligence
+IPS = Intrusion Prevention System
+LFI = Local File Inclusion
+MASINT = Measurement and Signature Intelligence
+MDR = Managed Detection and Response
+MITM = Man-In-The-Middle
+MTTD = Mean Time to Detect
+MTTR = Mean Time to Repair/Respond
+NAC = Network Access Control
+NGFW = Next-Generation Firewall
+OSINT = Open-Source Intelligence
+PGP = Pretty Good Privacy
+PUP = Potentially Unwanted Program
+PoC = Proof of Concept
+RAT = Remote Access Trojan
+RCE = Remote Code Execution
+RFI = Remote File Inclusion
+RSA = Rivest-Shamir-Adleman
+SAST = Static Application Security Testing
+SHA = Secure Hash Algorithm
+SIEM = Security Information and Event Management
+SIGINT = Signals Intelligence
+SOAR = Security Orchestration, Automation, and Response
+SQLi = SQL Injection
+SSRF = Server-Side Request Forgery
+WAF = Web Application Firewall
+XDR = Extended Detection and Response
+XSS = Cross-Site Scripting
+
+SOFTWARE
+API = Application Programming Interface
+BASH = Bourne Again Shell
+BIOS = Basic Input and Output System
+BSD = Berkeley Software Distribution
+CORS = Cross-Origin Resource Sharing
+CSS = Cascading Style Sheets
+FOSS = Free and Open-Source Software
+GNU = GNU's Not Unix!
+GPG = GNU Privacy Guard
+HTML = HyperText Markup Language
+IaaS = Infrastructure as a Service
+JS = JavaScript
+JSON = JavaScript Object Notation
+JWT = JSON Web Token
+MSP = Managed Service Provider
+OS = Operating System
+PaaS = Platform as a Service
+REST = Representational State Transfer
+SOAP = Simple Object Access Protocol
+SOP = Same-Origin Policy
+SQL = Structured Query Language
+SaaS = Software as a Service
+WASM = WebAssembly
+WWW = World Wide Web
+XaaS = Anything as a Service
+
+UNSORTED
+IGMP = Internet Group Management Protocol
+BGP = Border Gateway Protocol

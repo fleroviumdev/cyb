@@ -1,0 +1,429 @@
+Module 4 Notes
+--------------------------------------------------------------------------------
+
+ARP = Address Resolution Protocol
+BGP = Border Gateway Protocol
+CIDR = Classless Inter-Domain Routing
+DHCP = Dynamic Host Configuration Protocol
+EUI-64 = Extended Unique Identifier (64-bit)
+ICMP = Internet Control Message Protocol
+IGMP = Internet Group Management Protocol
+IP = Internet Protocol
+IPv4 = Internet Protocol version 4
+IPv6 = Internet Protocol version 6
+MAC = Media Access Control
+MLD = Multicast Listener Discovery
+ND = Neighbor Discovery
+NIC = Network Interface Card
+VLSM = Variable Length Subnet Masks
+
+CIDER%8  0   1   2   3   4   5   6   7   8
+balright 0   128 192 224 240 248 252 254 255
+whatleft 255 127 63  31  15  7   3   1   0
+
+IPv4: 255.255.255.255
+IPv6: FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+MAC : FF:FF:FF:FF:FF:FF
+
+● IPv4 Datagram Header: Structure of the packet used in IPv4 communication.
+● Layer 2 vs Layer 3 Addressing: Layer 2 uses MAC addresses; Layer 3 uses IP addresses.
+● Address Resolution Protocol (ARP): Maps Layer 3 IP addresses to Layer 2 MAC addresses.
+● Unicast Addressing: One-to-one communication.
+● Broadcast Addressing: One-to-all communication within a network.
+● Multicast Addressing: One-to-many communication to interested hosts using special IP ranges.
+● Anycast Addressing: One-to-nearest communication, used by routers and protocols like BGP.
+Public vs Private Addressing
+● Public IPs: Routable on the internet, managed by IANA.
+● Private IPs: Reserved for internal use, non-routable on the internet.
+● Class A: 10.0.0.0 to 10.255.255.255
+● Class B: 172.16.0.0 to 172.31.255.255
+● Class C: 192.168.0.0 to 192.168.255.255
+Other Reserved Address Ranges
+● Class D: 224.0.0.0 to 239.255.255.255 (Multicast)
+● Class E: 240.0.0.0 to 255.255.255.255 (Experimental)
+● Loopback: 127.0.0.0 to 127.255.255.255
+
+● ipconfig: Windows tool for viewing and managing IP configuration.
+● ifconfig and ip: Linux tools for network configuration.
+● arp: Displays and modifies IP to MAC address mappings.
+● ping: Tests connectivity using ICMP echo requests.
+
+ipconfig Commands
+● ipconfig (basic)
+● ipconfig /all (detailed info)
+● ipconfig /renew, /release (DHCP control)
+● ipconfig /flushdns (clear DNS cache)
+● ipconfig /registerdns (register DNS)
+
+ifconfig and ip Commands
+● ifconfig (deprecated but still used)
+● ip addr, ip link, ip -s link (modern commands for IP and interface info)
+
+arp Commands
+● arp -a (Show ARP table)
+● arp -s (Add static ARP entry)
+● arp -d * (Delete all ARP entries)
+● ip neigh (Show neighbor table)
+
+IPv6 Unicast Addressing
+● Global unicast and Interface ID (EUI-64).
+IPv6 Link Local Addressing
+● Automatically configured addresses for local network communication.
+IPv6 Multicast and Anycast Addressing
+● Multicast uses protocols like MLD.
+● No broadcast in IPv6.
+● Neighbor Discovery (ND) protocol replaces ARP.
+● Anycast used for nearest-node communication.
+IPv4 and IPv6 Transition Mechanisms
+● Dual stack, tunneling, and NAT64 to support coexistence.
+Common IPv6 Address Prefixes
+● Global unicast: 2000::/3
+● Link local: fe80::/10
+● Multicast: ff00::/8
+● Loopback: ::1/128
+● Documentation examples: 2001:db8::/32
+
+
+LESSON 4.1 Internet Protocol Basics
+
+In which scenario would a host use broadcast addressing?
+--- When attempting to discover all hosts within its local network or subnet.
+
+​Routing data between computers on a network requires several mappings between
+different addresses.
+Which of the following statements is true?
+--- Hosts use ARP to resolve known IP addresses into MAC addresses.
+
+What is the function of the Protocol field in the IPv4 header?
+--- Specifies the type of data encapsulated in the payload
+
+What is the maximum theoretical size of an IPv4 packet?
+--- 65,535 bytes
+
+What is the primary difference between unicast and broadcast addressing?
+--- Unicast addressing sends data to a single recipient, while broadcast
+addressing sends data to all recipients within a network.
+
+What is the primary function of forwarding at Layer 3 in a network?
+--- Routing packets based on IP addresses
+
+What role does a router play in a network with multiple subnets?
+--- It forwards packets between subnets.
+
+Which of the following allows the same IP address to be assigned to multiple
+interfaces?
+--- Anycast
+
+Which of the following statements accurately describes the use of ARP messaging
+in network communication?
+--- ARP messaging is used with both Ethernet and Wi-Fi networks to resolve IP
+addresses to MAC addresses.
+
+Which type of address is the IP address 232.111.255.250?
+--- Multicast
+
+
+LESSON 4.2 IPv4 Addressing
+
+A host has an address of 100.55.177.99/16. Which of the following is the
+broadcast address for the subnet?
+--- 100.55.255.255
+
+A network administrator wants to use a subnet mask containing 62 usable
+addresses.
+Which of the following subnet masks should the administrator use?
+--- 255.255.255.192
+
+A systems administrator is looking into communications issues on a server.
+If the destination IPv4 address is on a different IP network or subnet, where
+will the host send the traffic?
+--- Default gateway
+
+At the Network layer, what are IP source and destination addresses used to do?
+--- Forward packets to the proper destination
+
+How can IP configuration values be assigned to hosts in a Windows environment?
+--- Either statically or dynamically
+
+In Windows, how can the IP configuration for an Ethernet adapter be set?
+--- Either using the GUI Properties dialog or netsh commands
+
+What can dynamic routing protocols allow routers to do?
+--- Share information about known networks and possible paths.
+
+What does each octet in an IPv4 address represent in binary notation?
+--- A decimal value between 0 and 255
+
+What happens to the number of available host addresses when a bit is added to
+the subnet mask?
+--- It approximately halves.
+
+What is the classic naming scheme for Ethernet interfaces in Linux?
+--- eth0, eth1, eth2
+
+What is the primary purpose of a network mask (netmask) in IPv4 addressing?
+--- To distinguish between the network ID and the host ID within an IP address
+
+What is the purpose of the persistent configuration in Linux networking?
+--- To configure network settings that are applied after a reboot or
+reinitialization of a network adapter
+
+What solution addresses the inflexibility of using whole octet boundaries for
+subnet masks in IP networking?
+--- Dividing networks into subnetworks or subnets
+
+Why can the first address in an IP network not be assigned to a host?
+--- It is the network address.
+
+You have a network address of 132.66.0.0 and a subnet mask of 255.255.224.0.
+Which of the following are valid subnet addresses? (Select two.)
+--- 132.66.192.0
+--- 132.66.96.0
+
+
+LESSON 4.3 IPv4 Subnetting
+
+Consider the following IP addresses:
+124.77.8.5
+131.11.0.9
+190.66.250.10
+196.5.89.44
+Which of the following represents (in order) the IP address class of each listed
+IP address?
+--- Class A, Class B, Class B, Class C
+
+How do routers external to the network utilize CIDR?
+--- By using the /22 prefix to simplify routing and reduce the complexity of
+their routing tables
+
+What is the main advantage of using VLSM over traditional fixed-length subnet
+masking?
+--- It reduces the number of wasted IP addresses.
+
+When performing subnet calculations, what should you remember? (Select two.)
+--- Memorize the decimal values for the number of bits set to 1 in an octet
+within a mask.
+--- Think in terms of the number of mask bits.
+
+When subnetting the network address 172.30.0.0/16 to support 12 subnets, what is
+the new subnet mask in dotted decimal format?
+--- 255.255.240.0
+
+Which of the following IP address ranges or IP addresses is specifically set
+aside for use in documentation and examples?
+--- 192.0.2.0/24
+
+Which of the following IP addresses are Class C addresses? (Select two.)
+--- 192.15.5.55
+--- 223.16.5.0
+
+Which process allows hosts using private IP addresses to access the Internet?
+--- Network Address Translation (NAT)
+
+Why is VLSM considered a complementary technique to supernetting?
+--- Because it allows for more efficient IP address allocation
+
+You're configuring the IP address for a host and have been asked to use the
+address 192.160.99.110/16.
+Which subnet mask value would you use?
+--- 255.255.0.0
+
+
+LESSON 4.4 IP Troubleshooting Tools
+
+A helpdesk technician is troubleshooting issues on a Windows client.
+Which command should the technician use to clear the current IP address so that
+a new one can be assigned?
+--- ipconfig /release
+
+What does the TTL value in the ping command output indicate?
+--- The number of hops it took for the packet to reach its destination
+
+What is the difference between an ARP cache and a switch's MAC address table?
+--- An ARP cache maps IP addresses to MAC addresses, while a MAC address table
+maps ports to MAC addresses.
+
+What is the primary difference between dynamic learning and static configuration
+in network devices?
+--- Dynamic learning allows network devices to automatically learn and store MAC
+addresses, while static configuration requires manual entry of MAC addresses.
+
+What is the purpose of caching ARP results?
+--- To reduce the amount of ARP traffic on the network
+
+What is the purpose of the ip -s link command?
+--- To report interface statistics
+
+Which Windows TCP/IP utility gives an output of the results of four consecutive
+ICMP packets sent to a remote computer?
+--- ping
+
+Which ping switch forces the tool to query the IPv6 host record?
+--- -6
+
+You are troubleshooting a connectivity problem on a Linux server. You're able to
+connect to another system on the local network but not to a server on a remote
+network.
+You suspect that the default gateway information for the system may be
+configured incorrectly.
+Which of the following would you use to view the default gateway information on
+the Linux server?
+--- route
+
+You manage a network that has multiple internal subnets. You connect a
+workstation to the 192.168.1.0/24 subnet.
+This workstation cannot communicate with any other host on the network. You run
+ipconfig /all and see the following:
+
+Ethernet adapter Local Area Connection:
+Connection-specific DNS Suffix. : mydomain.local
+Description . . . . . . . : Broadcom network adapter
+Physical Address . . . . . : 00-AA-BB-CC-74-EF
+DHCP Enabled. . . . . . . : No
+Autoconfiguration Enabled . . : Yes
+IPv4 Address. . . . . . . : 192.168.2.102(Preferred)
+Subnet Mask . . . . . . . : 255.255.255.0
+Default Gateway. . . . . . : 192.168.1.1
+DNS Servers . . . . . . . : 192.168.2.20
+
+What is the MOST likely cause of the problem?
+--- Incorrect IP address
+
+
+LESSON 4.5 IP version 6
+
+Consider the following IPv6 address: FE80:0000:0000:0055:0000:0000:000A:AB00
+Which of the following are valid shortened forms of this address? (Select two.)
+--- FE80:0000:0000:0055::000A:AB00
+--- FE80::55:0000:0000:A:AB00
+
+How does IPv6 anycast addressing differ from multicast addressing?
+--- Anycast uses a single address for multiple interfaces globally.
+
+In IPv6, what does a network prefix of /48 indicate?
+--- The first 48 bits are used for network addressing.
+
+What do the first 8 bits of an IPv6 multicast address indicate?
+--- The address is within the multicast scope.
+
+What does IPv6 use to replace the Options field found in IPv4 headers?
+--- Extension headers
+
+What does flipping the 7th bit of the first octet in a MAC address to form an
+EUI-64 address accomplish?
+--- It differentiates the modified address from the original MAC address.
+
+What does the classless notation "/64" signify in an IPv6 network address?
+--- The first 64 bits are reserved for the network prefix.
+
+What is the prefix notation for globally unique unicast IPv6 addresses commonly
+referred to as?
+--- /48
+
+What is the primary purpose of IPv6 link local addresses?
+--- To enable communication within a single subnet without the need for a router
+
+What is the role of a zone index in IPv6 link local addressing?
+--- To make the address unique to a particular link
+
+What prefix do 6to4 addresses use?
+--- 2002::/16
+
+Which of the following are elements of an IPv6 packet? (Select two.)
+--- Main header
+--- Extension headers
+
+Which of the following is true about the scope of IPv6 global unicast addresses?
+--- They occupy 1/8th of the total IPv6 address space.
+
+Which of the following is typically preferred for interoperability between IPv4
+and IPv6 due to its efficiency?
+--- Dual Stack
+
+Which of the following statements correctly describes the use of canonical
+notation in IPv6 addresses?
+--- Canonical notation allows leading zeros in each 16-bit block of an IPv6
+address to be ignored, and one contiguous series of zeros to be replaced by a
+double colon (::).
+
+
+LESSON 4.6 IP Troubleshooting
+
+How can you identify machines with duplicate IP addresses?
+--- Using ping and then arp -a to examine the ARP cache table
+
+In a subnet with a /28 mask, why can't you rely solely on the first three octets
+to determine if an IP address is within the same subnet?
+--- Because the network prefix boundary lies within the last octet
+
+What does successfully pinging the IP address of the default gateway verify?
+--- That you can communicate with another host on the local network
+
+What is a likely cause of duplicate MAC addresses on a network?
+--- Use of locally administered addressing
+
+What is the first step in the general ping sequence for identifying connectivity
+issues?
+--- Ping the loopback address.
+
+What is the first step in troubleshooting IP configuration issues if you have
+ruled out problems at the Physical and Data Link layers?
+--- Use ipconfig or ifconfig to verify the host configuration.
+
+What issue arises when a host has an incorrect subnet mask that is longer than
+it should be?
+--- The host misroutes its replies, thinking communicating hosts are on a
+different subnet.
+
+What should you suspect if you cannot ping a local host and the error is
+"destination unreachable"?
+--- Incorrect IP address or netmask in the IP configuration
+
+Why might pinging remote hosts fail even if the network configuration is
+correct?
+--- ICMP is blocked by a firewall or other security software.
+
+You are monitoring network traffic and notice that ARP requests for a specific
+IP address are receiving responses from two different MAC addresses.
+What is the MOST likely cause of this issue, and how should you proceed to
+troubleshoot it?
+--- The IP address is configured on a virtual machine and its host; reassign the
+IP address to only one device. 
+
+Vocabulary
+● Address Resolution Protocol (ARP): A protocol used to map an IP address to a physical machine (MAC) address on a local network.
+● Anycast Addressing: A network addressing method where data is routed to the nearest or best destination out of a group of potential receivers.
+● Broadcast Addressing: Sending data to all devices on a local network segment.
+● Classful Addressing: The original system dividing IP addresses into fixed classes (A, B, C, D, E) based on address ranges.
+● Classless Inter-Domain Routing (CIDR): A method for allocating IP addresses and routing that replaces the classful system with flexible prefix lengths.
+● Default Gateway: A network device that routes traffic from a local network to other networks or the internet.
+● DHCP (Dynamic Host Configuration Protocol): A protocol that automatically assigns IP
+addresses and other network configuration to devices.
+● Duplicate IP Address: When two devices on the same network have the same IP address, leading to conflicts.
+● EUI-64: A method for automatically generating an IPv6 Interface ID using a device’s MAC address.
+● Flow Label: A field in the IPv6 header used to identify packets requiring special handling.
+● Host Address Range: The set of valid IP addresses that can be assigned to devices on a subnet.
+● ICMP (Internet Control Message Protocol): Used by network devices to send error
+messages and operational information.
+● Interface ID: The portion of an IPv6 address that identifies a specific interface on a subnet.
+● IPv4 (Internet Protocol version 4): The fourth version of the Internet Protocol, using 32-bit addresses.
+● IPv6 (Internet Protocol version 6): The newest Internet Protocol version, using 128-bit addresses.
+● Link Local Addressing: IPv6 addresses automatically assigned for communication within
+the local network segment.
+● Loopback Address: An IP address (127.0.0.1 for IPv4, ::1 for IPv6) used by a host to send packets to itself.
+● MAC Address (Media Access Control Address): A hardware address that uniquely
+identifies each device on a local network.
+● Multicast Addressing: Sending data to a group of interested receivers.
+● Network Mask / Subnet Mask: A binary mask used to identify the network portion of an IP address.
+● Neighbor Discovery (ND): Protocol in IPv6 that replaces ARP to find other devices on the local network.
+● Prefix (Slash) Notation: A shorthand for writing IP network masks indicating the number of bits used for the network.
+● Private IP Address: IP addresses reserved for use within private networks, not routable on the internet.
+● Public IP Address: IP addresses that are routable on the internet.
+● Routing Table: A data table stored in a router or host that lists routes to particular network destinations.
+● Subnet: A logically visible subdivision of an IP network.
+● Subnetting: The process of dividing a network into smaller subnetworks.
+● Tunneling: A method used to send IPv6 packets over an IPv4 network.
+● Variable Length Subnet Mask (VLSM): Allows subnets to have different sizes by using
+different subnet masks.
+● Unicast Addressing: One-to-one communication between a single sender and a single
+receiver.
