@@ -18,8 +18,9 @@ NIC = Network Interface Card
 VLSM = Variable Length Subnet Masks
 
 CIDER%8  0   1   2   3   4   5   6   7   8
-balright 0   128 192 224 240 248 252 254 255
-whatleft 255 127 63  31  15  7   3   1   0
+network  0   128 192 224 240 248 252 254 255
+whatleft 256 128 64  32  16  8   4   2   1
+useable  254 126 62  30  14  6   2   2?  1?
 
 IPv4: 255.255.255.255
 IPv6: FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
