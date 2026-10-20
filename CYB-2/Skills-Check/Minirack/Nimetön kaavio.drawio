@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sivu-1" id="wpDX7jG1w3N3MrvpfdKZ">
+    <mxGraphModel dx="1030" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="310" width="240" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Switch" vertex="1">
+          <mxGeometry height="60" width="220" x="90" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PC" vertex="1">
+          <mxGeometry height="60" width="220" x="90" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Backplate" vertex="1">
+          <mxGeometry height="60" width="220" x="90" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Patch Panel Brush" vertex="1">
+          <mxGeometry height="60" width="220" x="90" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="310" width="240" x="480" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Back of Switch" vertex="1">
+          <mxGeometry height="60" width="220" x="490" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Back of PC" vertex="1">
+          <mxGeometry height="60" width="220" x="490" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Power Supply" vertex="1">
+          <mxGeometry height="60" width="220" x="490" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Patch Panel" vertex="1">
+          <mxGeometry height="60" width="220" x="490" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Front" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="0Ycifc71Us-fY2rD5MgL-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Back" vertex="1">
+          <mxGeometry height="30" width="60" x="570" y="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

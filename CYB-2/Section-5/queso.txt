@@ -1,0 +1,279 @@
+SECTION 5.1
+
+A network technician is using traceroute on a corporate network to make use of
+ICMP "Time Exceeded" in order to identify routers along a delivery path.
+What is the TCP/IP feature that traceroute uses to accomplish this.?
+--- Time To Live (TTL) header field
+
+Considering the example below of three routers connected in a series, which
+static routes is Router A configured with? (Select two.)
+--- 10.0.4.0/24
+--- 10.0.3.0/24
+
+How does IPv6 handle packet fragmentation differently from IPv4?
+--- IPv6 requires the host to perform path MTU discovery.
+
+What does the Time to Live (TTL) header field represent in a packet?
+--- The maximum number of routers the packet can pass through
+
+What is the default probe message type used by the tracert command on Windows
+systems?
+--- ICMP Echo Request
+
+What is the purpose of applying an IP configuration to each interface on a
+router?
+--- To enable the router to serve its function in routing data
+
+What is the purpose of inspecting the ARP cache table?
+--- To discover duplicate IP addresses and misconfigurations
+
+What is the role of the Gateway/next hop parameter in a routing table?
+--- It indicates the next router or gateway along the path to the destination.
+
+Which command outputs the active routing table and includes details such as
+destination, gateway, and the source of the route?
+--- show route
+
+Which of the following best describes a directly connected route in a routing
+table?
+--- A route that is automatically added for each active router interface,
+representing subnets for which the router has a local interface
+
+SECTION 5.2
+
+If a router has two routes to the same destination with identical prefix lengths
+from the same routing protocol, how does it choose which route to use?
+--- By choosing the route with the lowest metric
+
+In RIP, what happens when a router receives an update that includes a route to a
+network it already knows about?
+--- It replaces its existing route with the new one only if the hop count is
+lower.
+
+Under which of the following circumstances might you implement BGP on your
+company network and share routes with internet routers?
+--- If the network is connected to the Internet using multiple ISPs
+
+What can cause convergence problems in a dynamic routing network?
+--- A flapping interface
+
+What happens when a routing protocol's database contains more than one route to
+the same destination prefix?
+--- The path with the lowest cost metric is used.
+
+What is the principal difference between link state and distance vector
+protocols?
+--- Link state protocols allow each node to hold a copy of the complete network
+topology.
+
+What is the purpose of the hello messaging in EIGRP?
+--- To confirm connectivity with its neighbors
+
+What protocol does BGP use for its operation?
+--- TCP
+
+What type of routing system is OSPF considered to be?
+--- Hierarchical
+
+What was the primary reason for the development of Enhanced IGRP (EIGRP)?
+--- To address limitations in IGRP, such as lack of support for classless
+addressing
+
+SECTION 5.3
+
+A network technician is looking at the interfaces on an edge router. The
+technician comes across a customer's router.
+What is this side of the interface called?
+--- CE
+
+In which of the following tables does a NAT router store port numbers and their
+associated private IP address mappings?
+--- Translation table
+
+Kate, a network administrator, has been tasked with staying within the company
+budget. She has a large network and doesn't want to spend more than she needs to
+on purchasing and registering multiple public IP addresses for each of the hosts
+on her network.
+Which of the following methods could help her provide internet access but also
+keep costs low and limit the number of registered IP addresses her organization
+needs to purchase?
+--- Use Network Address Translation.
+
+What happens to the packets returned from the Internet in a PAT configuration?
+--- They undergo reverse mapping to insert the original IP address and port
+number.
+
+What is the primary function of Port Address Translation (PAT)?
+--- To map multiple private IP addresses onto a single public IP address
+
+What is the primary role of an edge router in a network?
+--- To connect internal networks to external networks
+
+Which of the following is another term for Port Address Translation (PAT)?
+--- NAT overloading
+
+Which of the following problems does NAT help address?
+--- The shortage of IPv4 addresses
+
+You have a small network at home that is connected to the Internet. On your home
+network, you have a server with the IP address of 192.168.55.199/16. You have a
+single public address that is shared by all hosts on your private network.
+You want to configure the server as a web server and allow internet hosts to
+contact the server to browse a personal website.
+What should you use to allow access to this configuration?
+--- Static NAT
+
+Your company has recently expanded its operations and opened a new branch
+office. As the IT manager, you are tasked with setting up the network
+infrastructure for this new location. The office will connect to the company's
+main data center via the Internet for access to centralized resources.
+You need to select a router that will manage the traffic between the branch
+office's local area network (LAN) and the wide area network (WAN) internet
+access efficiently.
+Which type of router would be most suitable for this purpose?
+--- Edge router
+
+SECTION 5.4
+
+What does a stateful inspection firewall do that a stateless firewall does not?
+--- Maintains stateful information about the session established between two
+hosts
+
+What does ingress and egress traffic filtering refer to?
+--- Controlling both inbound and outbound network traffic
+
+What is a characteristic of an enterprise-class router firewall compared to a
+SOHO router firewall?
+--- It can support far more sessions.
+
+What is a key difference between an appliance firewall and a router firewall?
+--- An appliance firewall performs only the function of a firewall.
+
+Which of the following best describes packet filtering firewalls?
+--- They inspect the headers of IP packets and filter based on rules.
+
+SECTION 5.5
+
+What does a hierarchical star-mesh topology involve?
+--- Nodes at the top of the hierarchy configured in a mesh for redundancy
+
+What is the primary difference between a router and a layer 3 switch?
+--- A layer 3 switch cannot perform WAN routing.
+
+What is the primary purpose of using a hybrid topology in modern networks?
+--- To implement redundancy and fault tolerance
+
+Which layer in the three-tiered network hierarchy is responsible for providing
+fault-tolerant interconnections between different access blocks?
+--- Distribution Layer
+
+Why might a medium-sized network opt for a collapsed core model?
+--- To simplify the network by combining core and distribution layers
+
+SECTION 5.6
+
+A network administrator wants to set up a switch with a voice or auxiliary
+Virtual Local Area Network (VLAN) to distinguish the PC and VoIP traffic without
+having to set up a trunk port.
+Which of the following commands should the administrator perform first?
+--- interface GigabitEthernet0/0
+
+How are communications between VLANs facilitated?
+--- Through an IP router or layer 3 capable switch
+
+In the context of VoIP, what does the Cisco Discovery Protocol (CDP) facilitate?
+--- Automatic assignment of voice VLAN ID to handsets
+
+What is a "router on a stick"?
+--- A router with a single interface connected to a trunk port on the switch
+
+What is the default VLAN ID on a switch?
+--- 1
+
+What is the primary difference between tagged and untagged ports regarding VLAN
+tags?
+--- Untagged ports do not add or remove VLAN tags from frames within the same
+VLAN.
+
+What is the primary purpose of trunking in a network?
+--- To interconnect multiple switches and build the network fabric
+
+Which of the following best describes the function of subnetting?
+--- Logically dividing an IP network into smaller subnetworks
+
+Which of the following can you use to create a virtual LAN?
+--- Switch
+
+Why is it recommended to change the native VLAN from its default setting?
+--- To reduce the risk of VLAN hopping attacks
+
+SECTION 5.7
+
+If you can ping a host's default gateway but cannot ping hosts on remote
+networks, what should you suspect?
+--- A routing issue
+
+What does the split horizon mechanism prevent in routing protocols?
+--- A router from advertising a route back to the router from which it was
+learned
+
+What factor is considered when there are identical paths with equal
+administrative distances to a destination?
+--- The path with the lowest metric value
+
+What is a symptom of a routing loop?
+--- ICMP Time Exceeded error messages
+
+What is the effect of a poison route in distance vector routing protocols?
+--- It advertises a route with a hop count of 16 to indicate the network is
+unreachable.
+
+What is the first step in diagnosing VLAN assignment issues using ping?
+--- Ping the loopback address, then the host's own IP address.
+
+What is the preferred route selection when there are paths to the same
+destination with different prefix lengths?
+--- The path with the longest prefix length
+
+What is the primary purpose of establishing the scope of a VLAN assignment
+issue?
+--- To identify the specific problem and its impact on the network
+
+What must be configured if DHCP services are located in a different VLAN from
+the client devices?
+--- A DHCP relay
+
+What should be verified if you cannot ping any remote hosts during VLAN
+troubleshooting?
+--- The switch and router configuration
+
+REVIEW QUESTIONS
+
+Considering the example below -- router diagrams n stuff
+--- A? 10.0.1.?
+--- E?
+--- D? very unsure
+
+What is the purpose of administrative ?
+--- D?
+
+Which command can be used on a router to ?
+--- C? show vlan
+
+Which type of router specifically
+--- D?
+
+What command can be used to ? presence ? specific ip
+--- C? show ip route
+
+What is a router on a stick
+--- C?
+
+During a network audit its ?? 3 paragraphs
+--- B? TTL something
+
+What is an appliance firewall
+--- D?
+
+What is the primary purpose of PAT
+--- C? to map m

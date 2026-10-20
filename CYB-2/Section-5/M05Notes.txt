@@ -1,0 +1,126 @@
+Summary: Key Concepts
+- Routing Tables: Internal router maps directing packet forwarding.
+- Dynamic Routing: Protocols automate route updates.
+- NAT: Translates private IPs for internet access.
+- VLANs: Logical segmentation of networks within physical infrastructure.
+
+RIP (Routing Information Protocol): Legacy protocol finding best paths by hop count.
+EIGRP (Enhanced Interior Gateway Routing Protocol): Cisco proprietary, efficient.
+OSPF (Open Shortest Path First): Link-state protocol using Shortest Path First algorithm.
+BGP (Border Gateway Protocol): Used for routing between autonomous systems on the
+Internet.
+NAT (Network Address Translation): Translates private IP addresses to public IP addresses for internet access.
+PAT: Port Address Translation
+EIGRP: Enhanced Interior Gateway Routing Protocol
+VLAN: Virtual Local Area Network
+IEEE: Institute of Electrical and Electronics Engineers
+IP: Internet Protocol
+
+NAT Types
+- Static NAT, Dynamic NAT, and Port Address Translation (PAT).
+- PAT allows multiple devices to share a single public IP using different ports.
+
+Edge Routers
+- Typically handle NAT and connect internal networks to external networks.
+
+Firewall Types
+- Packet filtering, stateful inspection, proxy, and next-generation firewalls.
+
+Stateless vs. Stateful Firewalls
+- Stateless: Filters packets based on headers only.
+- Stateful: Tracks state of active connections for more intelligent filtering.
+
+Basic Network Topologies
+- Bus, Star, and Ring.
+
+Three-Tiered Network Hierarchy
+- Core, Distribution, and Access layers for scalable and manageable networks.
+
+Hybrid Topologies
+- Combine basic topologies to enhance redundancy and fault tolerance.
+
+Virtual LANs (VLANs)
+Purpose
+- Create separate logical networks within a single physical network.
+
+VLAN IDs and Membership
+- VLANs are identified by IDs; ports can be members of one or more VLANs.
+
+Tagged vs. Untagged Ports
+- Tagged ports carry VLAN identifiers.
+- Untagged ports carry traffic without VLAN tags.
+
+VLAN Types and Trunking
+- VLAN trunking bundles multiple VLANs over a single physical link using IEEE 802.1Q
+standard.
+
+VLAN Routing
+- Routers or Layer 3 switches route traffic between VLANs.
+- "Router on a stick" uses a single router interface connected to a trunk port.
+
+Routing and VLAN Troubleshooting
+Common Issues
+- Routing issues: Can ping default gateway but not remote hosts.
+- Default route and routing loops: Misconfigured default routes can cause loops.
+- VLAN assignment: Devices must have matching IP configurations for their VLAN.
+
+Routing Tables and Path Selection
+- Routing entries are defined by key parameters such as destination, next hop, metric, and
+interface.
+- Routing tables store these entries to help routers decide where to forward packets.
+
+Static Routes
+- Manually added by administrators.
+- Do not change unless manually edited.
+- Best for small or stable networks.
+
+Packet Forwarding Process
+1. Receive the packet.
+2. Examine the packet.
+3. Consult the routing table.
+4. Make a forwarding decision.
+5. Forward the packet to the next hop.
+
+Router Configuration Tools
+- Various commands and utilities help configure and troubleshoot routers
+
+### Static vs. Dynamic Routing Comparison ###
+Feature       Static                      Routing Dynamic Routing
+Configuration Manual                      Automatic adaptation to network changes
+Flexibility   Inflexible                  Flexible, real-time updates
+Control       Complete control over paths Less direct control
+Use Case      Small, stable networks      Large, complex, frequently changing networks
+
+Vocabulary List
+- Routing Table: A database in a router that stores routes to various network destinations.
+- Static Route: A manually configured routing entry that does not change unless edited by an administrator.
+- Dynamic Routing: A routing method where protocols automatically adjust routes based on
+network changes.
+- Packet Forwarding: The process by which a router receives a packet, consults the routing
+table, and sends it toward its destination.
+- Routing Protocol: Algorithms used by routers to share and update routing information.
+- Network Address Translation (NAT): A method that translates private IP addresses to
+public IP addresses for internet communication.
+- Edge Router: A router that connects an internal network to external networks, often handling NAT.
+- Port Address Translation (PAT): A type of NAT that allows multiple devices to share a
+single public IP by using different ports.
+- Firewall: A security device or software that monitors and controls incoming and outgoing
+network traffic.
+- Stateless Firewall: A firewall that filters packets based only on header information without tracking connection state.
+- Stateful Firewall: A firewall that tracks active connections and filters packets based on
+connection state.
+- Network Topology: The arrangement or layout of devices and connections in a network.
+- Three-Tiered Network: A hierarchical network design with core, distribution, and access
+layers.
+- Hybrid Topology: A network topology combining two or more basic topologies to enhance
+redundancy and fault tolerance.
+- Virtual LAN (VLAN): A logical network segment created within a physical network to
+separate traffic.
+- Tagged Port: A switch port that carries VLAN information (tags) in data packets.
+- Untagged Port: A switch port that carries data packets without VLAN tags.
+- Trunking: The practice of combining multiple VLANs on a single physical link using tagging protocols.
+- Router on a Stick: A router configuration with a single interface connected to a trunk port to route traffic between VLANs.
+- Routing Loop: A network problem where packets circulate endlessly due to misconfigured
+routing.
+- Default Route: A route used by a router when no specific route to a destination is found.
+
