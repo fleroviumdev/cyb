@@ -1,0 +1,285 @@
+Transport & Application Layer Protocols Transport Layer Overview
+- Responsible for multiplexing application data delivery.
+- Provides basic connectivity, addressing, and forwarding.
+- Common protocols: TCP (Transmission Control Protocol) and UDP (User Datagram
+Protocol).
+
+ACK (Acknowledgment)
+A signal sent in TCP communication to confirm receipt of data.
+
+APIPA (Automatic Private IP Addressing)
+A feature that assigns an IP address in the 169.254.x.x range when DHCP is unavailable.
+
+BootP (Bootstrap Protocol)
+A legacy protocol for automatic IP address assignment, predecessor to DHCP.
+
+DHCP (Dynamic Host Configuration Protocol)
+A network protocol that automatically assigns IP addresses and other network configuration to devices.
+
+DHCP Discover
+The initial broadcast message sent by a client to locate available DHCP servers.
+
+DHCP Offer
+A message from a DHCP server offering an IP address to a client.
+
+DHCP Request
+A message from the client requesting the offered IP address.
+
+DHCP Acknowledgment (Ack)
+The server’s confirmation that the IP address is assigned to the client.
+
+DHCP Relay Agent
+A device or service that forwards DHCP messages between clients and servers across different subnets.
+
+DNS (Domain Name System)
+A hierarchical system that translates domain names into IP addresses.
+
+DNSSEC (DNS Security Extensions)
+Security protocol that adds authentication to DNS responses to prevent spoofing.
+
+DoH (DNS over HTTPS)
+A protocol for performing DNS resolution via encrypted HTTPS connections.
+
+DoT (DNS over TLS)
+A protocol that encrypts DNS queries and responses using TLS for security.
+
+IP Address
+A unique numerical label assigned to each device on a network.
+
+IPv6
+The most recent version of the Internet Protocol, providing a larger address space than  IPv4.
+
+LDAP (Lightweight Directory Access Protocol)
+A protocol for accessing and maintaining distributed directory information services.
+
+MX Record (Mail Exchange Record)
+DNS record specifying mail servers responsible for accepting email for a domain.
+
+Port Number
+A numerical identifier in networking used to specify particular processes or network services.
+
+POP (Post Office Protocol)
+An email protocol used to retrieve messages from a mail server.
+
+RDP (Remote Desktop Protocol)
+A protocol that allows users to connect to another computer over a network connection.
+
+SLAAC (Stateless Address Autoconfiguration)
+An IPv6 feature that allows devices to self-configure an IP address without a DHCP server.
+
+SMTP (Simple Mail Transfer Protocol)
+Protocol for sending email messages between servers.
+
+SNMP (Simple Network Management Protocol)
+Protocol used for network management and monitoring.
+
+SOA Record (Start of Authority)
+DNS record that designates the authoritative information about a DNS zone.
+
+SRV Record (Service Record)
+DNS record that specifies the location of services within a domain.
+
+SSH (Secure Shell)
+A protocol for secure remote login and other secure network services.
+
+TCP (Transmission Control Protocol)
+A connection-oriented, reliable transport layer protocol.
+
+UDP (User Datagram Protocol)
+A connectionless, unreliable transport layer protocol.
+
+URL (Uniform Resource Locator)
+The address used to access resources on the internet.
+
+Web Server (HTTP/HTTPS)
+A server that delivers web content using HyperText Transfer Protocol or its secure variant.
+
+ACK    Acknowledgment
+APIPA  Automatic Private IP Addressing
+BOOTP  Bootstrap Protocol
+DHCP   Dynamic Host Configuration Protocol
+DNS    Domain Name System
+DNSSEC Domain Name System Security Extensions
+DoH    DNS over HTTPS
+DoT    DNS over TLS
+HTTP   HyperText Transfer Protocol
+HTTPS  HyperText Transfer Protocol Secure
+IMAP   Internet Message Access Protocol
+IP     Internet Protocol
+IPv4   Internet Protocol version 4
+IPv6   Internet Protocol version 6
+LDAP   Lightweight Directory Access Protocol
+MX     Mail Exchange
+NTP    Network Time Protocol
+POP    Post Office Protocol
+RDP    Remote Desktop Protocol
+RTCP   Real-Time Control Protocol
+RTP    Real-Time Protocol
+SIP    Session Initiation Protocol
+SMTP   Simple Mail Transfer Protocol
+SNMP   Simple Network Management Protocol
+SOA    Start of Authority
+SRV    Service Record
+SSH    Secure Shell
+SSL    Secure Sockets Layer
+TCP    Transmission Control Protocol
+TFTP   Trivial File Transfer Protocol
+TLS    Transport Layer Security
+UDP    User Datagram Protocol
+URL    Uniform Resource Locator
+SMTPs  SMTP Secure (SMTP over SSL/TLS)
+IMAPS  IMAP Secure
+POP3s  POP3 Secure
+SMB    Server Message Block
+
+20   TCP     ftp-data      File Transfer Protocol—Data
+21   TCP     ftp           File Transfer Protocol—Control
+22   TCP     ssh/sftp      Secure Shell / FTP over SSH
+23   TCP     telnet        Telnet remote access
+25   TCP     smtp          Simple Mail Transfer Protocol (email sending)
+53   TCP/UDP domain        Domain Name System (DNS)
+67   UDP     bootps        BOOTP/DHCP Server
+68   UDP     bootpc        BOOTP/DHCP Client
+69   UDP     tftp          Trivial File Transfer Protocol
+80   TCP     http          HyperText Transfer Protocol (web traffic)
+110  TCP     pop Post      Office Protocol (email retrieval)
+123  UDP     ntp/sntp      Network Time Protocol / Simple NTP
+143  TCP     imap          Internet Message Access Protocol (email retrieval)
+161  UDP     snmp          Simple Network Management Protocol
+162  UDP     snmp-trap     SNMP Trap messages
+389  TCP/UDP ldap          Lightweight Directory Access Protocol
+443  TCP     https         HTTP Secure (SSL/TLS encrypted web traffic)
+445  TCP     smb           Server Message Block over TCP/IP (file sharing)
+514  UDP     syslog        System logging
+546  UDP     dhcpv6-client DHCPv6 Client
+547  TCP     dhcpv6-server DHCPv6 Server
+587  TCP     smtps         SMTP Secure (email sending over SSL/TLS)
+636  TCP     ldaps         LDAP Secure
+993  TCP     imaps         IMAP Secure
+995  TCP     pop3s         POP3 Secure
+1433 TCP     sql-server    Microsoft SQL Server
+1521 TCP     sqlnet        Oracle SQL*Net
+3306 TCP     mysql         MySQL / MariaDB
+3389 TCP     rdp           Remote Desktop Protocol
+5004 UDP     rtp           Real-Time Protocol (media streaming)
+5005 UDP     rtcp          Real-Time Control Protocol
+5060 TCP/UDP sip           Session Initiation Protocol (VoIP signaling)
+5061 TCP/UDP sips          SIP Secure
+
+SOA  Start of Authority; zone authority and admin info
+A    Maps domain names to IPv4 addresses
+AAAA Maps domain names to IPv6 addresses
+MX   Specifies mail exchange servers for a domain
+SRV  Specifies service locations including ports
+TXT  Stores text info for external sources (e.g., SPF, DKIM)
+PTR  Pointer record for reverse DNS lookup (IP to domain)
+
+
+TCP Handshake (Connection Establishment)
+- TCP is connection-oriented, reliable.
+- Three-way handshake process:
+  1. Host A sends SYN (synchronize) to Host B.
+  2. Host B responds with SYN + ACK (acknowledgment).
+  3. Host A sends ACK back.
+- After handshake, connection is established and communication can begin.
+
+UDP Communication
+- UDP is connectionless, no handshake.
+- Data is sent as datagrams without acknowledgments.
+- Faster but less reliable than TCP.
+- Used where speed is prioritized over reliability (e.g., streaming, gaming).
+
+Activity: Using netstat Command
+- Open Command Prompt or Terminal.
+- Run
+    netstat
+  to view active network connections and ports.
+- Options:
+    -a  Displays all active connections and listening ports.
+    -p  Shows process IDs.
+    -b  Displays executable involved (requires admin privileges).
+
+DHCP (Dynamic Host Configuration Protocol) DHCP Process
+- Enables automatic assignment of IP addressing and network configuration.
+- Four-step process between client and server:
+  1. DHCP Discover: Client broadcasts to find available DHCP servers.
+  2. DHCP Offer: Server offers an IP address and configuration.
+  3. DHCP Request: Client requests the offered IP address.
+  4. DHCP Acknowledgment (Ack): Server acknowledges and completes assignment.
+
+DHCP Reservations and Exclusions
+- Reservations: Assign a fixed IP to a specific client (based on MAC address).
+- Exclusions: IP addresses excluded from the DHCP pool to avoid conflicts.
+
+APIPA (Automatic Private IP Addressing)
+- When DHCP fails, devices assign themselves an IP in the 169.254.x.x range.
+- Allows limited local network communication without DHCP.
+
+IPv6 Autoconfiguration
+- Two main methods for IPv6 address assignment:
+  1. SLAAC (Stateless Address Autoconfiguration): Devices self-configure addresses using router advertisements, no server needed.
+  2. DHCPv6: Similar to DHCP for IPv4, provides managed addresses.
+
+DHCP Relay and Troubleshooting DHCP Relay Agent
+- Acts as a bridge between clients and remote DHCP servers.
+- Forwards DHCP broadcast messages across different subnets.
+- Allows centralized DHCP servers to serve multiple networks.
+
+Network Diagram
+- Shows DHCP clients on different networks communicating with DHCP server via relay agent. 
+
+DHCP Relay Packet Flow
+- DHCP Discover and Request messages from clients are relayed to the DHCP server.
+- Server responses (Offer, Ack) are relayed back to clients.
+
+Activity: Troubleshooting DHCP
+- Steps to troubleshoot DHCP issues:
+- Verify physical connectivity.
+- Check DHCP server status and scope availability.
+- Confirm relay agent configuration.
+- Use commands like
+    ipconfig /all
+      or
+    dhclient
+  to check IP address status.
+- Review logs on DHCP server.
+
+Domain Naming System (DNS) What is DNS?
+- Translates human-friendly domain names (e.g., comptia.org) into IP addresses.
+- Essential for internet and network usability.
+
+DNS Hierarchy
+- Root Domain (top-level)
+- Top-Level Domains (TLDs), e.g., .com, .org
+- Domain and Sub-Domains
+
+DNS Server Configuration
+- Can be configured for internal network use or external public DNS services.
+
+Internal vs. External DNS
+- Internal DNS resolves names within a private network.
+- External DNS resolves public domain names on the internet.
+
+DNS Spoofing/Poisoning         DNSSEC (DNS Security Extensions)
+Eavesdropping/Interception     DNS over TLS (DoT)
+Tampering                      DNS over HTTPS (DoH)
+DNS Tunneling/Advanced Attacks Advanced DNS Firewalls
+
+Common Client DNS Issues
+- Incorrect DNS server settings.
+- Cached old or incorrect DNS entries.
+- Network connectivity problems.
+
+Name Resolution Issues
+- Failures in translating domain names to IP addresses.
+- Can be caused by DNS server problems or misconfigurations.
+
+Activity: Run nslookup and dig
+- On Windows: Use
+    nslookup comptia.org
+  in Command Prompt.
+- On Linux/Mac: Use
+    dig comptia.org
+  in Terminal.
+- These commands help diagnose DNS resolution issues.
+
