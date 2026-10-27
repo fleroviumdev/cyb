@@ -1,0 +1,224 @@
+Transport Layer Security (TLS)
+- TLS is a protocol that encrypts data to protect it from interception.
+- It provides secure communication between clients and servers.
+
+TLS Handshake Process
+- Steps in establishing a secure TLS connection:
+  1. Client Hello: Client initiates communication, proposing security options.
+  2. Server Hello: Server responds with chosen options.
+  3. Client Key Exchange: Client sends key material.
+  4. Session Key Established: Both parties establish a shared secret key.
+  5. Server Finished: Server confirms handshake completion
+
+Network Time Protocol (NTP)
+- NTP is used to synchronize clocks across devices on a network to Coordinated Universal
+
+Time (UTC).
+- Accurate time synchronization is crucial for logging, security protocols, and network troubleshooting.
+
+Precision Time Protocol (PTP)
+- PTP is a more precise time synchronization protocol often used in industrial and telecommunications networks.
+- The Grandmaster Clock acts as the main time source in the PTP domain.
+
+Hypertext Transfer Protocol (HTTP)
+- Protocol for transferring web pages.
+- Process overview:
+  1. User enters a URL.
+  2. Browser translates URL into an HTTP request.
+  3. The server interprets the request and retrieves data.
+  4. The server sends an HTTP response with status code and data.
+  5. Browser renders and displays the webpage.
+
+HTTPS (HTTP Secure)
+- HTTP over TLS/SSL for secure web communication on port 443.
+- Encrypts data to protect against eavesdropping and tampering.
+
+File Transfer Protocols
+- FTP: Non-secure file transfer protocol.
+- SFTP: Secure version of FTP using SSH for encryption.
+
+Server Message Block (SMB) Protocol
+- Used for sharing files, printers, and other resources in Windows networks.
+- Clients request access; servers grant or deny access to SMB shared resources.
+
+Network Attached Storage (NAS)
+- Dedicated file storage device connected to a network.
+- Provides shared storage accessible by multiple clients.
+
+Database Services
+- Relational Database Management Systems (RDBMS):
+  - Use structured tables with predefined schemas.
+  - Support SQL queries.
+- NoSQL Databases:
+  - Use flexible schema or schema-less design.
+  - Useful for large-scale, distributed data storage.
+
+RDBMS vs NoSQL
+- RDBMS is structured, transactional, and uses SQL.
+- NoSQL is flexible, scalable, and suited for big data or real-time web apps.
+
+Simple Mail Transfer Protocol (SMTP)
+- Protocol used to send emails between servers.
+
+Internet Message Access Protocol (IMAP)
+- Protocol used to access and manage emails remotely on the mail server.
+- Allows synchronization across multiple devices.
+
+SMTP and IMAP Interaction Diagram
+- Sender’s email server uses SMTP to send mail to receiver’s email server.
+- Receiver accesses mail using IMAP.
+
+Voice over IP (VoIP) Protocols
+- Protocols that enable voice and video communication over IP networks.
+- Examples include SIP, RTP, and others.
+
+Trivia Activity
+- Protocol to remotely manage emails: IMAP
+- Protocol to send emails between servers: SMTP
+
+Disaster Recovery Concepts
+- Planning to restore IT systems after disruptions.
+- Includes strategies for backup, failover, and recovery sites.
+
+Disaster Recovery Metrics
+- Measures like Recovery Time Objective (RTO) and Recovery Point Objective (RPO) define acceptable downtime and data loss.
+
+Disaster Recovery Sites
+- Types include:
+- Hot Site: Fully operational, immediate failover.
+- Warm Site: Partially ready, some setup needed.
+- Cold Site: Basic infrastructure, longer setup time.
+
+Fault Tolerance and Redundancy
+- Use of duplicate hardware and software to ensure continuous operation.
+- Redundancy avoids single points of failure.
+
+Key Performance Indicators (KPIs)
+- Metrics to assess system reliability, uptime, and performance.
+
+Load Balancers
+- Distribute network or application traffic across multiple servers.
+- Improve responsiveness and availability.
+
+High Availability Clusters
+- Groups of servers working together to provide continuous service.
+- If one server fails, others take over.
+
+First Hop Redundancy Protocols
+- Ensure continuous gateway availability for devices by providing backup routers.
+
+Hot, Warm, or Cold Site Activity
+- For a financial services company requiring minimal downtime and high transaction volume, a Hot Site is best.
+
+Summary
+- Implement HTTPS everywhere using TLS on web servers.
+- Use secure file transfer protocols like SFTP or FTPS.
+- Limit unencrypted services such as SMB to trusted internal networks.
+- Develop Disaster Recovery (DR) and High Availability (HA) plans with dedicated resources to ensure business continuity.
+
+Additional Notes and Tips
+- Always ensure time synchronization (NTP/PTP) for network reliability and security.
+- Secure application services protect data integrity and privacy.
+- Understand differences between database types to choose the right one for your needs.
+- Disaster recovery planning is essential for minimizing downtime and data loss.
+- Use redundancy and load balancing to maintain high availability of critical services.
+
+Application Services
+Services that provide networked applications such as web, email, file sharing, and database access.
+
+Transport Layer Security (TLS)
+A protocol that encrypts data to secure communications over a network.
+
+TLS Handshake
+The process of establishing a secure TLS connection between a client and server.
+
+Network Time Protocol (NTP)
+A protocol used to synchronize clocks across devices to Coordinated Universal Time (UTC).
+
+Precision Time Protocol (PTP)
+A high-precision time synchronization protocol used in specialized networks.
+
+Grandmaster Clock
+The primary time source in a PTP domain.
+
+Hypertext Transfer Protocol (HTTP)
+The protocol used for transferring web pages over the internet.
+
+HTTPS (HTTP Secure)
+The secure version of HTTP that uses TLS to encrypt data.
+
+File Transfer Protocol (FTP)
+A protocol used for transferring files, typically unencrypted.
+
+Secure File Transfer Protocol (SFTP)
+A secure version of FTP that uses SSH encryption.
+
+Server Message Block (SMB)
+A network protocol for sharing files, printers, and other resources in a Windows environment.
+
+Network Attached Storage (NAS)
+A dedicated file storage device connected to a network providing shared access.
+
+Relational Database Management System (RDBMS)
+A database system that stores data in tables with predefined schemas and supports SQL.
+
+NoSQL Database
+A database system that uses flexible, schema-less data storage, often for large-scale or unstructured data.
+
+Simple Mail Transfer Protocol (SMTP)
+The protocol used to send emails between mail servers.
+
+Internet Message Access Protocol (IMAP)
+A protocol used to access and manage emails stored on a mail server remotely.
+
+Voice over IP (VoIP)
+Technology that allows voice and video communications to be transmitted over IP networks.
+
+Disaster Recovery (DR)
+Plans and processes to restore IT systems after disruptive events.
+
+Recovery Time Objective (RTO)
+The maximum acceptable amount of time to restore a system after a failure.
+
+Recovery Point Objective (RPO)
+The maximum acceptable amount of data loss measured in time.
+
+Disaster Recovery Site
+A location equipped to restore IT operations. Types include hot, warm, and cold sites.
+
+Fault Tolerance
+The ability of a system to continue operating despite failures.
+
+Redundancy
+Duplication of critical components to increase reliability and availability.
+
+Key Performance Indicators (KPIs)
+Metrics used to evaluate the performance and reliability of systems.
+
+Load Balancer
+A device or software that distributes network or application traffic across multiple servers.
+
+High Availability Cluster
+A group of servers working together to provide continuous service despite failures.
+
+First Hop Redundancy Protocol
+Protocols that provide automatic failover between routers to ensure gateway availability.
+
+TLS   Transport Layer Security
+NTP   Network Time Protocol
+PTP   Precision Time Protocol
+HTTP  Hypertext Transfer Protocol
+HTTPS Hypertext Transfer Protocol Secure
+FTP   File Transfer Protocol
+SFTP  Secure File Transfer Protocol
+SMB   Server Message Block
+NAS   Network Attached Storage
+RDBMS Relational Database Management System
+NoSQL Not Only SQL (Non-relational Database)
+SMTP  Simple Mail Transfer Protocol
+IMAP  Internet Message Access Protocol
+VoIP  Voice over Internet Protocol
+DR    Disaster Recovery
+RTO   Recovery Time Objective
+RPO   Recovery Point Objective
+KPI   Key Performance Indicator

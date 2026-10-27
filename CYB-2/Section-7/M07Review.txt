@@ -1,0 +1,175 @@
+PTP can be deployed as a layer 3 protocol over IP. What is a limitation of this
+deployment?
+--- It cannot achieve the same accuracy as layer 2 implementations.
+
+What can happen if a server or host is configured with the incorrect time?
+--- It may not be able to access network services
+
+What happens during a TLS handshake?
+--- The server provides its digital certificate to the client for
+authentication.
+
+What is established between a server and a client after successful
+authentication with TLS?
+--- An encrypted tunnel
+
+What is it called when a system's clock begins to be off by a few seconds or
+even minutes?
+--- Time drift
+
+What is the main advantage of Precision Time Protocol (PTP) over Network Time
+Protocol (NTP)?
+--- PTP provides nanosecond precision.
+
+What role does a grandmaster clock play in a PTP domain?
+--- It is the authoritative time source.
+
+Which of the following time standards does NTP use?
+--- UTC
+
+You are setting up a secure website for your online store. You want to ensure
+that all data transmitted between your website and your customers is encrypted.
+Which of the following steps is essential for you to achieve this?
+--- Obtain and install a digital certificate.
+
+You are the network administrator for a small consulting firm. You've set up an
+NTP server to manage the time across all the machines in the network.
+You have a computer that's experiencing a slight time drift of just a few
+seconds.
+Which time correction should you use to fix the system's clock?
+--- Slew
+
+In the context of FTP over Explicit TLS (FTPES), which command is used to
+encrypt the data connection for actual file transfers after upgrading an
+unsecure connection to a secure one?
+--- PROT
+
+What does a client use to identify the resource it wants to request from an HTTP
+server?
+--- Uniform Resource Locator (URL)
+
+What does the term "stateless protocol" imply about HTTP?
+--- Each request from a client to a server is treated as a new request.
+
+What feature does version 2 of HTTP add to enhance its functionality?
+--- More state-preserving features
+
+What is the primary function of a database?
+--- To provision information in a format that can be read and updated
+
+What is the primary purpose of the File Transfer Protocol (FTP)?
+--- To transfer files between a client and server
+
+What is the purpose of using TLS transport encryption in databases?
+--- To secure data transmission over the network
+
+Which TCP port does HTTPS encrypted traffic default to?
+--- 443
+
+Which of the following is a limitation of active FTP mode regarding firewalls?
+--- It can cause configuration problems due to unpredictable port usage.
+
+Which operating system is typically used by NAS appliances?
+--- Linux-based
+
+Which protocol is typically used for copy or backup operations on a NAS
+appliance?
+--- SMB or FTP
+
+Which version of SMB supports message encryption?
+--- SMB3
+
+Why is FTPES usually preferred over FTPS?
+--- FTPES is easier to configure with firewalls.
+
+Why is SMB1 now disabled by default on current Windows versions?
+--- It has very serious security vulnerabilities.
+
+Why might TFTP not be suitable for transferring large files?
+--- It operates over UDP, which does not guarantee delivery.
+
+How do VoIP phones distinguish data traffic from voice traffic?
+--- By configuring separate VLAN IDs for data and voice traffic
+
+How do VoIP phones use VLAN tagging?
+--- To ensure that SIP control and RTP media protocols are segregated from
+normal data traffic
+
+In a Windows environment, which protocol is typically used to access Microsoft
+Exchange mailboxes?
+--- MAPI
+
+What does SMTP use to discover the IP address of the recipient's SMTP server?
+--- The domain name part of the recipient's email address
+
+What is a key advantage of using VoIP technology over traditional PSTN lines?
+--- Ability to transmit voice over IP networks
+
+What is a significant difference between a TDM PBX and a VoIP PBX?
+--- A TDM PBX is supplied as vendor-specific hardware, while a VoIP PBX can be
+implemented as software.
+
+What is one of the primary purposes of the Internet Message Access Protocol
+(IMAP)?
+--- To manage a mailbox on a server
+
+What is the purpose of the STARTTLS command in SMTP?
+--- To upgrade an existing unsecure connection to use TLS
+
+What is the purpose of using a tel: URI scheme in SIP systems?
+--- To dial a landline or cell phone
+
+Which of the following is a unique identifier used by SIP endpoints?
+--- SIP URI
+
+In HSRP, what term is used to describe the group of routers configured to work
+together as a single default gateway?
+--- Standby group
+
+In an active-active cluster configuration, what happens in the event of a
+failover?
+--- The workload of the failed node is shifted onto the remaining node(s).
+
+What distinguishes a Layer 7 switch from a Layer 4 switch in load balancing?
+--- Layer 7 switch makes forwarding decisions based on application-level data.
+
+What does MTTF stand for, and how is it different from MTBF?
+--- Mean Time to Failure; MTTF is used for non-repairable components, while MTBF
+is for repairable ones.
+
+What does Recovery Time Objective (RTO) measure in disaster recovery planning?
+--- The time following a disaster within which a system must be restored
+
+What does an availability of "five-nines" (99.999%) signify in disaster
+recovery?
+--- The system is available for 99.999% of the time.
+
+What does disaster recovery focus on?
+--- Switching services to failover systems or sites
+
+What is a virtual IP in the context of high availability clusters?
+--- A shared or floating address used to access the service provided by the
+cluster.
+
+What is the main difference between a hot site and a warm site?
+--- A warm site requires the latest data set to be loaded.
+
+What is the primary challenge of entering into reciprocal arrangements for
+disaster recovery?
+--- It is complex to plan and set up.
+
+What is the purpose of a Business Impact Analysis (BIA) in continuity planning?
+--- To identify risk disruption for primary business functions
+
+What is the significance of conducting validation tests in disaster recovery?
+--- To ensure services can be restored
+
+Where is a load balancer typically placed in a network topology?
+--- Between the Internet and the application servers
+
+Which FHRP is designed to work in an active/standby configuration?
+--- HSRP
+
+Which of the following is NOT a component of a fully redundant server
+configuration?
+--- Single network card
